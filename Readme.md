@@ -77,6 +77,18 @@ npm install
 npm run server
 ```
 
+- Postman
+
+```
+pilih salah satu file postman yang ada di folder asstets lalu import
+```
+
+- PostgreSQL
+
+```
+buat database sesuai dengan queri yang terdapat pada folder assets 
+```
+
 ### Setup .env example
 
 Create .env file in your root project folder.
