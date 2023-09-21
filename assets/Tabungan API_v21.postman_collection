@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nama\" : \"Tes1\",\r\n    \"nik\" : \"352904\",\r\n    \"no_hp\" : \"081231135426\"\r\n}\r\n",
+							"raw": "{\r\n    \"nama\" : \"Rizal\",\r\n    \"nik\" : \"352901\",\r\n    \"no_hp\" : \"081231135423\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -156,7 +156,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/nasabah/saldo/434837",
+							"raw": "http://localhost:8000/nasabah/saldo/{no_rekening}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -165,7 +165,7 @@
 							"path": [
 								"nasabah",
 								"saldo",
-								"434837"
+								"{no_rekening}"
 							]
 						}
 					},
@@ -177,7 +177,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/nasabah/mutasi/434837",
+							"raw": "http://localhost:8000/nasabah/mutasi/{no_rekening}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -186,7 +186,7 @@
 							"path": [
 								"nasabah",
 								"mutasi",
-								"434837"
+								"{no_rekening}"
 							]
 						}
 					},
