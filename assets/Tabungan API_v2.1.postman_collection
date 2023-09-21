@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "248687fb-40b3-47ec-9a20-2dbea26518e5",
+		"name": "Tabungan API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25234541"
+	},
+	"item": [
+		{
+			"name": "nasabah",
+			"item": [
+				{
+					"name": "daftar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\" : \"Tes1\",\r\n    \"nik\" : \"352904\",\r\n    \"no_hp\" : \"081231135426\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/nasabah/daftar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"nasabah",
+								"daftar"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "tabungan",
+			"item": [
+				{
+					"name": "buka tabungan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"no_rekening\" : \"434837\",\r\n    \"saldo\" : \"10000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/nasabah/tabungan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"nasabah",
+								"tabungan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tabung",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"no_rekening\" : \"434837\",\r\n    \"saldo\" : \"1000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/nasabah/tabung",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"nasabah",
+								"tabung"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tarik",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"no_rekening\" : \"434837\",\r\n    \"saldo\" : \"2000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/nasabah/tarik",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"nasabah",
+								"tarik"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cek saldo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/nasabah/saldo/434837",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"nasabah",
+								"saldo",
+								"434837"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cek mutasi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/nasabah/mutasi/434837",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"nasabah",
+								"mutasi",
+								"434837"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY3NDk3MWY2LWI5YmYtNDc0OC04YWU4LTg5ZmI0ZTdjZDFkYiIsInNhbGRvIjoiMTAwMDAiLCJpYXQiOjE2OTUyNzY4MDIsImV4cCI6MTY5NTI5ODQwMiwiaXNzIjoiYXBpIn0.kiT78C9mjtIRtUjXskLyBhRnfG6C6fo-tY-f3iry1Yc",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
